@@ -6,4 +6,4 @@ Links to materials from pythonkc presentations
 
 ### June
 
-* [Module of the Month: Requests](https://github.com/estebistec/requests-presentation)
+* [Module of the Month: Requests](https://github.com/estebistec/requests-presentation/tree/events/pykc-2013-06-motm)
