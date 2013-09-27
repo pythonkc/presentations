@@ -1,8 +1,12 @@
 # Presentations
 
-Links to materials from pythonkc presentations
+Artifacts from PythonKC presentations.
 
 ## 2013
+
+### September
+
+* [Openining slides](https://docs.google.com/presentation/d/1uP9rFVevBH3KyKpbJL4vQrfjAKlHCDrJo8S-dIV2sMU/edit?usp=sharing)
 
 ### June
 
