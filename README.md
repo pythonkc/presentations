@@ -6,7 +6,7 @@ Artifacts from PythonKC presentations.
 
 ### September
 
-* [Openining slides](https://docs.google.com/presentation/d/1uP9rFVevBH3KyKpbJL4vQrfjAKlHCDrJo8S-dIV2sMU/edit?usp=sharing)
+* [Opening slides](https://docs.google.com/presentation/d/1uP9rFVevBH3KyKpbJL4vQrfjAKlHCDrJo8S-dIV2sMU/edit?usp=sharing)
 
 ### June
 
