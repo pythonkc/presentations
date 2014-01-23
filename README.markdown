@@ -8,6 +8,10 @@ Artifacts from PythonKC presentations.
 
 * [Opening Slides](https://github.com/pythonkc/presentations/blob/master/2014_01/pykc_coffee_20140111.markdown)
 
+### January Monthly Meetup
+
+* [Opening Slides](https://github.com/pythonkc/presentations/blob/master/2014_01/pykc_meetup_20140123.markdown)
+
 ## 2013
 
 ### October
