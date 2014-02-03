@@ -255,7 +255,7 @@
     -moz-box-pack: start;
     -webkit-box-pack: start;
     -ms-box-pack: start;
-    box-pack: start; 
+    box-pack: start;
 }
 .deck-container .slide.left .content {
     display: -webkit-box;
@@ -272,7 +272,7 @@
     -moz-box-pack: start;
     -webkit-box-pack: start;
     -ms-box-pack: start;
-    box-pack: start; 
+    box-pack: start;
 }
 .deck-container .slide.left .content > * {
     display: -webkit-box;
@@ -289,7 +289,7 @@
     -moz-box-pack: start;
     -webkit-box-pack: start;
     -ms-box-pack: start;
-    box-pack: start; 
+    box-pack: start;
 }
 .deck-container .slide .content {
     display: -webkit-box;
@@ -323,5 +323,5 @@
     -moz-box-pack: center;
     -webkit-box-pack: center;
     -ms-box-pack: center;
-    box-pack: center; 
+    box-pack: center;
 }
