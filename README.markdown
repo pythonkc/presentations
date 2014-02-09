@@ -4,6 +4,10 @@ Artifacts from PythonKC presentations.
 
 ## 2014
 
+### February Coffee & Code
+
+* [Managing Python versions (in OS X)]()
+
 ### January Coffee & Code
 
 * [Opening Slides](https://github.com/pythonkc/presentations/blob/master/2014_01/pykc_coffee_20140111.markdown)
