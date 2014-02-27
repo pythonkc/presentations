@@ -9,7 +9,7 @@ from __future__ import print_function
 
 def greetings():
     print('Welcome to PythonKC Monthly Meetup.')
-    print('Today is Thursday 27 January 2014.')
+    print('Today is Thursday 27 February 2014.')
     print('Thanks to Google Fiber Space Lounge staff.')
 
 
