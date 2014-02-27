@@ -4,6 +4,9 @@ Artifacts from PythonKC presentations.
 
 ## 2014
 
+### February Monthly Meetup
+* [Opening Slides](https://github.com/pythonkc/presentations/blob/master/2014_02/pykc_meetup_20140227.markdown)
+
 ### January Coffee & Code
 
 * [Opening Slides](https://github.com/pythonkc/presentations/blob/master/2014_01/pykc_coffee_20140111.markdown)
