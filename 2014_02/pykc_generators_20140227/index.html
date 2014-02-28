@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>pydown</title>
+	
+	<meta name="description" content="A jQuery library for modern HTML presentations">
+	<meta name="author" content="Caleb Troughton">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="css/deck.core.css">
+	<link rel="stylesheet" href="css/deck.status.css">
+	<link rel="stylesheet" href="css/deck.scale.css">
+	
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="css/web-2.0.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="css/horizontal-slide.css">
+
+	<link rel="stylesheet" href="css/md_hl.css">
+	
+	<script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<!-- Begin slides -->
+<section class="slide "><div class="content"><h2>Generators</h2>
+<p>Jon Smajda</p>
+<p>February 27, 2014</p></div></section>
+<section class="slide "><div class="content"><ol>
+<li>Powerful language feature</li>
+<li>Increasingly important</li>
+<li>Initially unsettling</li>
+</ol></div></section>
+<section class="slide "><div class="content"><h2>Python lists are friendly</h2>
+<div class="codehilite"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mylist</span>  <span class="c"># Let&#39;s take a look</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span>  <span class="c"># How big?</span>
+<span class="mi">3</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mylist</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>  <span class="c"># Peek at first two items</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">mylist</span><span class="p">]</span>  <span class="c"># Square &#39;em all</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mylist</span>  <span class="c"># Still there!</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><h2>One day you're expecting a list...</h2>
+<h4>and you get a generator.</h4>
+<div class="codehilite"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">mygen</span>  <span class="c"># Oh hello, 0x106f39fa0, nice to see you.</span>
+<span class="o">&lt;</span><span class="n">generator</span> <span class="nb">object</span> <span class="o">&lt;</span><span class="n">genexpr</span><span class="o">&gt;</span> <span class="n">at</span> <span class="mh">0x106f39fa0</span><span class="o">&gt;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">mygen</span><span class="p">)</span>  <span class="c"># How dare you?</span>
+<span class="ne">TypeError</span><span class="p">:</span> <span class="nb">object</span> <span class="n">of</span> <span class="nb">type</span> <span class="s">&#39;generator&#39;</span> <span class="n">has</span> <span class="n">no</span> <span class="nb">len</span><span class="p">()</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mygen</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>  <span class="c"># No peeking! </span>
+<span class="ne">TypeError</span><span class="p">:</span> <span class="s">&#39;generator&#39;</span> <span class="nb">object</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attribute</span> <span class="s">&#39;__getitem__&#39;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="n">mygen</span><span class="p">)</span>  <span class="c"># Ok, just gimme a list.</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">mygen</span><span class="p">]</span>  <span class="c"># Where did it all go!</span>
+<span class="p">[]</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><p>Why does Python hate you?</p></div></section>
+<section class="slide "><div class="content"><h2>Back to basics</h2></div></section>
+<section class="slide "><div class="content"><h3>What is a generator?</h3>
+<p>A special type of <em>iterable</em>.</p></div></section>
+<section class="slide "><div class="content"><h3>Ok, what is an iterable?</h3>
+<h4>Short answer:</h4>
+<p>Something you can <em>iterate</em> over to produce a <em>stream of values</em>.</p></div></section>
+<section class="slide "><div class="content"><h3>Lists, Dictionaries, Strings...</h3>
+<div class="codehilite"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s">&#39;One&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s">&#39;Two&#39;</span><span class="p">}</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="s">&#39;Python&#39;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><h3></h3>
+<h4>Long answer:</h4>
+<p>Iteration in python works on things that implement an <code>__iter__</code> method to return iterators with <code>__next__</code> (or <code>next</code>) methods that handle <code>StopIteration</code> exceptions.</p></div></section>
+<section class="slide "><div class="content"><p>More or less what <code>for i in mylist: print i</code> is doing:</p>
+<div class="codehilite"><pre><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">mylist</span><span class="p">)</span> <span class="c"># calls mylist.__iter__()</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c"># call iterator.next() (or __next__() in 3)</span>
+        <span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">))</span>  
+    <span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
+        <span class="k">break</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><h3>Two Points</h3>
+<ol>
+<li>
+<p>How nice that we don't have to write <em>that</em> all the time.</p>
+</li>
+<li>
+<p>How nice that Python provides such a nice interface for objects we want to iterate over?</p>
+</li>
+</ol></div></section>
+<section class="slide "><div class="content"><h2>A Common Use For Iteration</h2>
+<p>We want to iterate over an iterable and return a new iterable:</p>
+<div class="codehilite"><pre><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="n">squared</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="n">squared</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span> <span class="o">*</span> <span class="n">number</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">squared</span>
+
+<span class="c"># Or:</span>
+<span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">]</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><h3>The Problem</h3>
+<p>You have to hold <em>two</em> complete lists in memory: the original list and the new one.</p>
+<div class="codehilite"><pre><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">]</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><h3>The Solution</h3>
+<p>Maybe don't really <em>need</em> to hold that whole list in memory.</p>
+<p><em>If</em> we're only going to iterate over it one item at a time...  <br />
+we just need <em>one thing at a time</em>.</p></div></section>
+<section class="slide "><div class="content"><h3>The Solution</h3>
+<div class="codehilite"><pre><span class="c"># Instead of returning the whole list</span>
+<span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="n">squared</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="n">squared</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span> <span class="o">*</span> <span class="n">number</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">squared</span>
+
+<span class="c"># We *yield* one thing at a time </span>
+<span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><p>Instead of a list, you get a <em>recipe</em>.</p>
+<div class="codehilite"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">sq</span> <span class="o">=</span> <span class="n">square</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">sq</span>
+<span class="o">&lt;</span><span class="n">generator</span> <span class="nb">object</span> <span class="n">square</span> <span class="n">at</span> <span class="mh">0x10707b190</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<p><em>(A recipe that self-destructs after you use it once.)</em></p></div></section>
+<section class="slide "><div class="content"><h4><code>"This generator will self-destruct"</code></h4>
+<p><img alt="" src="self-destruct.jpg" /></p></div></section>
+<section class="slide "><div class="content"><p>As long as we're only iterating, we can't even tell the difference:</p>
+<div class="codehilite"><pre><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">square</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]):</span>
+    <span class="k">print</span> <span class="n">i</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><p>Because generators behave just like other iterables:</p>
+<div class="codehilite"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">sq</span> <span class="o">=</span> <span class="n">square</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">sq</span>
+<span class="o">&lt;</span><span class="n">generator</span> <span class="nb">object</span> <span class="n">square</span> <span class="n">at</span> <span class="mh">0x10707b190</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">sq</span><span class="p">)</span>
+<span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">sq</span><span class="p">)</span>
+<span class="mi">4</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">sq</span><span class="p">)</span>
+<span class="mi">9</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">next</span><span class="p">(</span><span class="n">sq</span><span class="p">)</span>
+<span class="ne">StopIteration</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="n">sq</span><span class="p">)</span>  <span class="c"># ...except for this part</span>
+<span class="p">[]</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><p>Because everybody loves comprehensions: just use <code>()</code> instead of <code>[]</code>:</p>
+<div class="codehilite"><pre><span class="c"># This returns a list</span>
+<span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">]</span>
+
+<span class="c"># This returns a generator</span>
+<span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">)</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><p>So, generators are a great tool if:</p>
+<ol>
+<li>
+<p>You only need to iterate and be done.</p>
+</li>
+<li>
+<p>You run the risk of large amounts of data.</p>
+</li>
+</ol></div></section>
+<section class="slide "><div class="content"><h3>Python 2.7</h3>
+<p>There are generator alternatives:</p>
+<div class="codehilite"><pre><span class="n">range</span>  <span class="o">-&gt;</span> <span class="n">xrange</span>
+<span class="n">map</span>    <span class="o">-&gt;</span> <span class="n">itertools</span><span class="p">.</span><span class="n">imap</span>
+<span class="n">filter</span> <span class="o">-&gt;</span> <span class="n">itertools</span><span class="p">.</span><span class="n">ifilter</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><h3>Python 3.3</h3>
+<p>Generators by default:</p>
+<div class="codehilite"><pre><span class="n">range</span>
+<span class="n">map</span>
+<span class="n">filter</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><p>Because of common iterator interface/protocol, many functions that take a list can take a generator:</p>
+<div class="codehilite"><pre><span class="o">&gt;&gt;&gt;</span> <span class="nb">sum</span><span class="p">([</span><span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]])</span>
+<span class="mi">14</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">sum</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="mi">14</span>
+</pre></div></div></section>
+<section class="slide "><div class="content"><p>And our <code>square</code> generator can also take a generator from, say, <code>xrange</code></p>
+<div class="codehilite"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">square</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">square</span><span class="p">(</span><span class="nb">xrange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">sum</span><span class="p">(</span><span class="n">square</span><span class="p">(</span><span class="nb">xrange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000000</span><span class="p">)))</span>
+</pre></div>
+
+
+<p>You can really see the advantages of generators when you start:</p>
+<ol>
+<li>Dealing with more data</li>
+<li>Chaining generator functions together</li>
+</ol></div></section>
+<section class="slide "><div class="content"><h3>Quick Demo?</h3></div></section>
+<section class="slide "><div class="content"><h3>Just getting started</h3>
+<ol>
+<li><code>.send</code></li>
+<li>asyncio/"Tulip"</li>
+</ol></div></section>
+<section class="slide "><div class="content"><h3>Resources</h3>
+<ol>
+<li>
+<p>Ned Batchelder, <a href="http://pyvideo.org/video/1758/">How to Loop Like A Native</a></p>
+</li>
+<li>
+<p>Jeff Knupp, <a href="https://www.jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/">Yield and Generators Explained</a></p>
+</li>
+<li>
+<p>Guido van Rossum, <a href="http://python-history.blogspot.com/2010/06/from-list-comprehensions-to-generator.html">From List Comprehensions to Generator Expressions</a></p>
+</li>
+<li>
+<p>David Beazley, <a href="http://www.dabeaz.com/coroutines/Coroutines.pdf">A Curious Course on Coroutines and Concurrency</a></p>
+</li>
+<li>
+<p><a href="http://legacy.python.org/dev/peps/pep-0380/">PEP380: Syntax for Delegating to a Subgenerator</a></p>
+</li>
+</ol></div></section>
+
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="js/deck.core.js"></script>
+<script src="js/deck.status.js"></script>
+<script src="js/deck.scale.js"></script>
+
+<!-- Initialize the deck -->
+<script>
+$(function() {
+	$.deck('.slide');
+});
+</script>
+
+</body>
+</html>
