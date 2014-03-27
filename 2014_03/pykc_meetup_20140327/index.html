@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>pydown</title>
+	
+	<meta name="description" content="A jQuery library for modern HTML presentations">
+	<meta name="author" content="Caleb Troughton">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="css/deck.core.css">
+	<link rel="stylesheet" href="css/deck.status.css">
+	<link rel="stylesheet" href="css/deck.scale.css">
+	
+	<!-- Style theme. More available in /themes/style/ or create your own. -->
+	<link rel="stylesheet" href="css/web-2.0.css">
+	
+	<!-- Transition theme. More available in /themes/transition/ or create your own. -->
+	<link rel="stylesheet" href="css/horizontal-slide.css">
+
+	<link rel="stylesheet" href="css/md_hl.css">
+	
+	<script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<!-- Begin slides -->
+<section class="slide "><div class="content"><div class="codehilite"><pre><span class="c">#!/usr/bin/env python</span>
+<span class="c"># -*- coding: utf-8 -*-</span>
+
+<span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
+
+<span class="k">def</span> <span class="nf">greetings</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Welcome to PythonKC March Monthly Meetup.&#39;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">&#39;Today is Thursday 27 March 2014.&#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">greetings</span><span class="p">()</span>
+</pre></div></div></section>
+<section class="slide left"><div class="content"><h2>PythonKC News</h2>
+<h3>April PyKC Coffee &amp; Code</h3>
+<ul>
+<li>Saturday 12 April 2014</li>
+<li>Looking for a location</li>
+</ul>
+<h3>April PyKC April Monthly Meetup</h3>
+<ul>
+<li>Thursday 24 April 2014</li>
+<li>Looking for a location</li>
+<li>Looking for presentations<ul>
+<li>You don't have to be an expert!</li>
+<li>Just be willing to share something interesting!</li>
+</ul>
+</li>
+</ul></div></section>
+<section class="slide left"><div class="content"><h2>Python News</h2>
+<ul>
+<li><a href="http://docs.python.org/3/whatsnew/3.4.html">What’s New In Python 3.4</a></li>
+<li><a href="https://github.com/jaredks/rumps">RUMPS: Ridiculously Uncomplicated Mac OS X Python Statusbar Apps</a></li>
+<li><a href="https://github.com/lingthio/Flask-User">Flask-User: Customizable User Account Management for Flask</a></li>
+<li><a href="https://github.com/prakhar1989/Algorithms">Algorithms in Python</a></li>
+<li><a href="http://pyfilesystem.org">PyFilesystem: A filesystem abstraction layer for Python</a></li>
+<li><a href="http://ballingt.com/2014/03/23/surprising-python.html">Surprising Python</a></li>
+<li><a href="http://www.drdobbs.com/testing/unit-testing-with-python/240165163">Dr. Dobb's: Unit Testing in Python</a></li>
+<li><a href="http://blog.perrygeo.net/2008/04/19/a-quick-cython-introduction/">A Quick Cython Introduction</a></li>
+<li><a href="http://www.blog.pythonlibrary.org/2014/03/19/pytho-101-an-introduction-to-pythons-debugger/">Python 101: An Introduction to Python’s Debugger</a></li>
+<li><a href="http://www.blog.pythonlibrary.org/2014/03/20/python-102-how-to-profile-your-code/">Python 102: How to Profile Your Code</a></li>
+<li><a href="https://www.kickstarter.com/projects/1219760486/a-writing-idiomatic-python-video-series-watch-and">Kickstarter: A "Writing Idiomatic Python" Video Series</a></li>
+<li><a href="http://thelivingpearl.com/2014/03/24/20-good-functions-to-know-in-python/">20 Good Functions To Know In Python</a></li>
+</ul></div></section>
+
+
+<!-- deck.status snippet -->
+<p class="deck-status">
+	<span class="deck-status-current"></span>
+	/
+	<span class="deck-status-total"></span>
+</p>
+
+<!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="js/deck.core.js"></script>
+<script src="js/deck.status.js"></script>
+<script src="js/deck.scale.js"></script>
+
+<!-- Initialize the deck -->
+<script>
+$(function() {
+	$.deck('.slide');
+});
+</script>
+
+</body>
+</html>
