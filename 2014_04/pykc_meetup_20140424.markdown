@@ -47,6 +47,7 @@ if __name__ == '__main__':
 * Python Software Foundation: [Open Basic Membership](https://www.python.org/psf/membership)
 * pyvideo.org: [PyCon US 2014 Videos](http://pyvideo.org/category/50/pycon-us-2014)
 * python.org: [PEP 373 -- Python 2.7 Release Schedule](http://legacy.python.org/dev/peps/pep-0373/)
+* python.org: [PEP 404 -- Python 2.8 Un-release Schedule](http://legacy.python.org/dev/peps/pep-0404/)
 * Diary of a reverse-engineer: [Deep Dive Into Python's VM: Story of LOAD_CONST Bug](https://doar-e.github.io/blog/2014/04/17/deep-dive-into-pythons-vm-story-of-load_const-bug/)
 * Dr. Dobb's: [Lightweight Virtual Environments in Python 3.4](http://www.drdobbs.com/architecture-and-design/lightweight-virtual-environments-in-pyth/240167069)
 * Machinalis Blog: [Migrating data into your Django project](http://www.machinalis.com/blog/migrating-data-into-your-django-project/)
