@@ -28,7 +28,7 @@ if __name__ == '__main__':
 * Looking for presentations
     * You don't have to be an expert!
     * Just be willing to share something interesting!
-    * Cool Thinngs Python Can Do!
+    * Cool Things Python Can Do!
         * Comprehensions
 
 !SLIDE left
