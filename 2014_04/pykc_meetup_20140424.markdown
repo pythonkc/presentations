@@ -52,3 +52,5 @@ if __name__ == '__main__':
 * Dr. Dobb's: [Lightweight Virtual Environments in Python 3.4](http://www.drdobbs.com/architecture-and-design/lightweight-virtual-environments-in-pyth/240167069)
 * Machinalis Blog: [Migrating data into your Django project](http://www.machinalis.com/blog/migrating-data-into-your-django-project/)
 * Medium: [Building a Git Server](https://medium.com/joltem-an-open-incubator/1dfb89adca1d)
+* Real Python! Blog: [Flask by Example -- Part 1 -- Project Setup](http://www.realpython.com/blog/python/flask-by-example-part-1-project-setup/#.U1lG7l76VFw)
+* Click Home Page: [Click -- a Python package for creating beautiful command line interfaces](http://click.pocoo.org)
