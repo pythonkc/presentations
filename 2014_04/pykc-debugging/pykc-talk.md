@@ -26,14 +26,14 @@ Just use `print()` statements!
 - Exception (dis)handling
 - [Tests](https://docs.python.org/2/library/unittest.html)
 - [Call-stack visualtizations](http://pycallgraph.slowchop.com/en/master/)
-  - Example: microsearch
+  - Example: [microsearch](./pycallgraph.png)
 
 #Further topics
 - remote, network, and client-server debugging
 - [mobile device debugging](https://developers.google.com/chrome-developer-tools/docs/remote-debugging)
 - Django debugging
   - [Debug toolbar](https://github.com/django-debug-toolbar/django-debug-toolbar)
-  - Example: [PyKC Website](https://github.com/pythonkc/pythonkc.com) (http://localhost:8001)
+  - Example: [PyKC Website](https://github.com/pythonkc/pythonkc.com)
 
 #fin
 ![and thanks](http://i.imgur.com/gytCGgu.jpg)
