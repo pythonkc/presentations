@@ -35,3 +35,4 @@ if __name__ == '__main__':
 * Jeff Knupp Python Videos: [Writing Idiomatic Python Video One](https://www.youtube.com/watch?v=g0gNWGg2JxM)
 * Aaron Meurer's Blog: [10 awesome features of Python that you can't use because you refuse to upgrade to Python 3](http://asmeurer.github.io/python3-presentation/slides.html)
 * Trinket Blog: [Why Python is a Great First Language](http://blog.trinket.io/why-python/)
+* Thomas Leonard's blog: [Python to OCaml - Retrospctive](http://roscidus.com/blog/blog/2014/06/06/python-to-ocaml-retrospective/)
