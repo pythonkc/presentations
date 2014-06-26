@@ -1,3 +1,5 @@
+# PythonKC June 2014 Coffee & Code
+
 ~~~~{python}
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
@@ -7,11 +9,11 @@ from __future__ import print_function
 
 def greetings():
     print('Welcome to PythonKC Coffee & Code.')
-    print('Today is Saturday 1 June 2014.')
+    print('Today is Saturday 14 June 2014.')
     print('Thanks to Mud Pie Vegan Bakery & Coffeehouse.')
 
 if __name__ == '__main__':
-	greetings()
+    greetings()
 
 ~~~~
 
