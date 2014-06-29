@@ -1,4 +1,4 @@
-# PythonKC July 2014 Monthly Meetup
+# PythonKC June 2014 Monthly Meetup
 
 ~~~~{python}
 #!/usr/bin/env python
