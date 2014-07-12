@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
 ## PythonKC News
 
-### June Thursday Meetup
+### July Thursday Meetup
 
 * 24 July 2014
 * Salva O'Renick
