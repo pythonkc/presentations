@@ -33,6 +33,6 @@ if __name__ == '__main__':
 * Lauren Orsini: [Why Python Makes A Great First Programming Language](http://readwrite.com/2014/07/08/what-makes-python-easy-to-learn)
 * Adrian Mouat: [Using Docker as a Python Development Environment](http://continuousdelivery.uglyduckling.nl/uncategorized/using-docker-as-a-python-development-environment/)
 * Thomas Kluyver: [So you want to write a desktop app in Python](http://takluyver.github.io/posts/so-you-want-to-write-a-desktop-app-in-python.html)
-* Constantine Lignos: [Anti-Patterns in Python Programming](http://takluyver.github.io/posts/so-you-want-to-write-a-desktop-app-in-python.html)
+* Constantine Lignos: [Anti-Patterns in Python Programming](http://lignos.org/py_antipatterns/)
 * Brian Holdefehr: [Decorators and Functional Python](http://www.brianholdefehr.com/decorators-and-functional-python)
 * Stupid Python Ideas: [Why Python (or any decent language) doesn't need blocks](http://stupidpythonideas.blogspot.it/2014/06/why-python-or-any-decent-language.html)
