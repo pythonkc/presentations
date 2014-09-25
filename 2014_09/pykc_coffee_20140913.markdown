@@ -30,3 +30,4 @@ if __name__ == '__main__':
 * Django Project: [Django 1.7 released](https://www.djangoproject.com/weblog/2014/sep/02/release-17-final/)
 * Dan Loewenherz: [Supercharge Your Python Shell](http://dlo.me/archives/2014/09/08/pythonrc)
 * Coding for Entrepreneurs: [Try Django - Launch with Code - Learn Django & Boostrap Basics](https://www.youtube.com/playlist?list=PLEsfXFp6DpzT5veidCTZ1mQriBX0Mu2LF)
+* Guido van Rossum: [Proposal: Use mypy syntax for function annotations](https://mail.python.org/pipermail/python-ideas/2014-August/028618.html)
