@@ -35,3 +35,4 @@ if __name__ == '__main__':
 * Shelly Tan: [Five mini programming projects for the Python beginner](http://knightlab.northwestern.edu/2014/06/05/five-mini-programming-projects-for-the-python-beginner/)
 * Charles Leifer: [Saturday morning hacks: Building an Analytics App with Flask](http://charlesleifer.com/blog/saturday-morning-hacks-building-an-analytics-app-with-flask/)
 * Tristan A. Hearn: [Conway's Game Of Life in Python](http://www.tristanhearn.com/gameoflife)
+* Mark van Lent: [How we use Virtualenv, Buildout and Docker](https://www.vlent.nl/weblog/2014/09/28/how-we-use-virtualenv-buildout-and-docker/)
