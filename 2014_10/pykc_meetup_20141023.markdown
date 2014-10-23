@@ -6,9 +6,9 @@
 
 
 def greetings():
-    print('Welcome to the PythonKC Monthly Meetup.')
-    print('Today is Thursday 23 October 2014.')
-    print('Thanks to Salva O'Renick.')
+    print("Welcome to the PythonKC Monthly Meetup.")
+    print("Today is Thursday 23 October 2014.")
+    print("Thanks to Salva O'Renick.")
 
 
 if __name__ == '__main__':
