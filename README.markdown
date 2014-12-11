@@ -4,6 +4,9 @@ Artifacts from PythonKC presentations.
 
 ## 2014
 
+### December Coffee & Code
+* [Opening Items](https://github.com/pythonkc/presentations/blob/master/2014_12/pykc_coffee_20141213.markdown)
+
 ### November Coffee & Code
 * [Opening Items](https://github.com/pythonkc/presentations/blob/master/2014_11/pykc_coffee_20141108.markdown)
 
