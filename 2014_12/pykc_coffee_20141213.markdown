@@ -45,3 +45,4 @@ if __name__ == '__main__':
 * David Taylor: [Top 10 Python idioms I wish I'd learned earilier](http://prooffreaderplus.blogspot.ca/2014/11/top-10-python-idioms-i-wished-id.html)
 * Seam Consulting: [Multiprocessing with Python](http://www.yseam.com/blog/MM.html)
 * Jonathan Lettvin: [Comprehensions](https://www.airpair.com/python/posts/python-comprehension-syntax)
+* Jon Evans: [Making a Mockery of Python](http://engineroom.trackmaven.com/blog/making-a-mockery-of-python/)
