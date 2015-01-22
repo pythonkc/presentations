@@ -44,7 +44,7 @@ if __name__ == '__main__':
 
 ## Presentations
 
-* John Smajda: [What the pex?](https://github.com/smajda/feed2text)
+* Jon Smajda: [What the pex?](https://github.com/smajda/feed2text)
 * Chip Warden: [Decorating Python](https://github.com/pythonkc/pydecorators)
 
 ## Discussions
