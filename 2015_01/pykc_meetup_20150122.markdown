@@ -28,7 +28,7 @@ if __name__ == '__main__':
 ### February PyKC Monthly Meetup
 
 * 26 February 2015
-* Looking for a location
+* C2FO is hosting 
 * Presentations
     * Caleb Hyde: Logstash & Kibana
     * Who else?
