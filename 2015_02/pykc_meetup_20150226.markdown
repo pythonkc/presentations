@@ -34,12 +34,14 @@ if __name__ == '__main__':
 
 ## Python News
 
-* Ryan Brown: [Python Tips and Traps](https://www.airpair.com/python/posts/python-tips-and-traps)
-* Greg at ŷhat Blog: [11 Python Libraries You Might Not Know](http://blog.yhathq.com/posts/11-python-libraries-you-might-not-know.html)
-* John Paul Mueller: [6 Python Performance Tips](http://blog.newrelic.com/2015/01/21/python-performance-tips/)
-* Nafiul Islam: [Making a Static Blog with Pelican](http://nafiulis.me/making-a-static-blog-with-pelican.html)
-* Charles Leifer: [Lightweight Python utilities for working with Redis](http://charlesleifer.com/blog/walrus-lightweight-python-utilities-for-working-with-redis/)
-* Google for Education: [Python Regular Expressions](https://developers.google.com/edu/python/regular-expressions)
+* Eric Schles: [Advanced Concepts in Flask](http://www.syncano.com/advanced-concepts-flask/)
+* Leonardo Giordani: [Default arguments in Python](http://lgiordani.com/blog/2015/02/11/default-arguments-in-python/)
+* Brett Slatkin: [Accept Functions for Simple Interfaces Instead of Classes (_Effective Python_ Item 23)](http://www.effectivepython.com/2015/02/12/accept-functions-for-simple-interfaces-instead-of-classes/)
+* Chris Kiehl: [Cleaner Code Through Partial Function Application](http://chriskiehl.com/article/Cleaner-coding-through-partially-applied-functions/)
+* Ionel Cristian Mărieș: [Understanding Python metaclasses](http://blog.ionelmc.ro/2015/02/09/understanding-python-metaclasses/)
+* Shahriar Tajbakhsh: [Underscores in Python](http://shahriar.svbtle.com/underscores-in-python)
+* Justyna Ilczuk: [Configuring and Running Django and Celery in Docker Containers (pt. 1)](http://www.syncano.com/configuring-running-django-celery-docker-containers-pt-1/)
+* Michael Herman: [Docker in Action - Fitter, Happier, More Productive](https://realpython.com/blog/python/docker-in-action-fitter-happier-more-productive/)
 
 ## Presentations
 
