@@ -1,4 +1,4 @@
-# PythonKC March 2015 Monthly Meetup
+# PythonKC March 2015 Coffee & Code 
 
 ~~~~{python}
 #!/usr/bin/env python3
