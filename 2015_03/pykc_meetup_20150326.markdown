@@ -4,7 +4,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
 def greetings():
     print("Welcome to the PythonKC Monthly Meetup.")
     print("Today is Thursday 26 March 2015.")
@@ -13,7 +12,6 @@ def greetings():
 
 if __name__ == '__main__':
     greetings()
-
 
 ~~~~
 
