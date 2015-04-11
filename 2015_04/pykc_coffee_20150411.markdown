@@ -31,6 +31,7 @@ if __name__ == '__main__':
 * Mary Rose Cook: [An introduction to functional programming](https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming)
 * Charles Leifer: [Meet Scout, a Search Server Powered by SQLite](http://charlesleifer.com/blog/meet-scout-a-search-server-powered-by-sqlite/)
 * Lerner Consulting Blog: [Is it hashable? Fun and games with hashing in Python](http://blog.lerner.co.il/is-it-hashable-fun-and-games-with-hashing-in-python/)
+* PyCon 2015: [PyCon 2015 Videos: online as they're ready](https://www.youtube.com/channel/UCgxzjK6GuOHVKR_08TT4hJQ)
 
 ## Discussions
 
