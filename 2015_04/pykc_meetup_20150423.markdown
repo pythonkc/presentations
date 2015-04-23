@@ -29,3 +29,4 @@ if __name__ == '__main__':
 * Aaron Maxwell: [Exceptional Logging of Exceptions in Python](https://www.loggly.com/blog/exceptional-logging-of-exceptions-in-python/)
 *  O'Reilly: [Python in Education](http://www.oreilly.com/programming/free/python-in-education.csp)
 * [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
+* QuantifiedCode: [The Little Book of Python Anti-Patterns](http://docs.quantifiedcode.com/python-anti-patterns/)
