@@ -32,3 +32,4 @@ if __name__ == '__main__':
 * Narenarya at Impythonist: [Up and Running with Vagrant and Django](http://impythonist.in/up-and-running-with-vagrant-and-django/)
 * Michael Buckley: [Group and Count with Dictionaries](https://codefisher.org/catch/blog/2015/04/22/python-how-group-and-count-dictionaries/)
 * Sahand Saba: [Combinatorial Generation Using Coroutines with Examples in Python](http://sahandsaba.com/combinatorial-generation-using-coroutines-in-python.html)
+* Random Stream: [Simple Json Response basic test between Flask and Django](http://kracekumar.com/post/117948332935/simple-json-response-basic-test-between-flask-and)
