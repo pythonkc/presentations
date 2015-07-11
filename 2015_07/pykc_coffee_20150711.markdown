@@ -7,7 +7,7 @@
 
 def greetings():
     print("Welcome to PythonKC Coffee & Code.")
-    print("Today is Saturday 13 June 2015.")
+    print("Today is Saturday 11 July 2015.")
     print("Thanks to The Disruption Institute.")
 
 
