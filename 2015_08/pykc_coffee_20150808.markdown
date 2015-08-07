@@ -34,10 +34,12 @@ if __name__ == '__main__':
 * Hernantz Blog: [Mock yourself, not your tests][mock]
 * HumanGeo Blog: [Profiling in Python][profiling]
 * Marco Bonzanini: [My Python Code is Slow? Tips for Profiling][slow]
+* Matthew Daly: [Testing Django Views in Isolation][isolation]
 * Reuven Lerner: [Want to understand Python’s comprehensions? Think in Excel or SQL.][comps]
 
 [codelib]: http://pbpython.com/best-practices.html "Best Practices for Managing Your Code Library"
 [comps]: http://blog.lerner.co.il/want-to-understand-pythons-comprehensions-think-like-an-accountant/ "Want to understand Python’s comprehensions? Think in Excel or SQL."
+[isolation]: http://matthewdaly.co.uk/blog/2015/08/02/testing-django-views-in-isolation/ "Testing Django Views in Isolation"
 [minted]: http://www.minted.com "Minted"
 [mock]: http://hernantz.github.io/mock-yourself-not-your-tests.html "Mock yourself, not your tests"
 [profiling]: http://blog.thehumangeo.com/2015/07/28/profiling-in-python/ "Profiling in Python"
