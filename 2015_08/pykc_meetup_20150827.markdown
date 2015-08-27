@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
 * Alan Thomas: Creating [WSGI][wsgi] Middleware
 * Caleb Hyde: Using [Apache Kafka][akafka] and [Apache Storm][astorm] with Python
-* Jon Smajda: [Django Birthday][dbday] Recap
+* ~~Jon Smajda: [Django Birthday][dbday] Recap~~
 
 [akafka]: http://kafka.apache.org/ "Apache Kafka"
 [astorm]: https://storm.apache.org/ "Apache Storm"
